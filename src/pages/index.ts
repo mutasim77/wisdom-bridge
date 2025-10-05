@@ -1,8 +1,9 @@
-export { default as CoursesPage } from './CoursesPage';
-export { default as HomePage } from './HomePage';
-export { default as SingleCoursePage } from './SingleCoursePage';
-export { default as ChapterPage } from './ChapterPage';
-export { default as ProfilePage } from './ProfilePage';
-export { default as AboutPage } from './AboutPage';
+import { lazy } from "react";
 
-
+// Lazy-load all pages
+export const HomePage = lazy(() => import("./HomePage"));
+export const CoursesPage = lazy(() => import("./CoursesPage"));
+export const SingleCoursePage = lazy(() => import("./SingleCoursePage"));
+export const ChapterPage = lazy(() => import("./ChapterPage"));
+export const ProfilePage = lazy(() => import("./ProfilePage"));
+export const AboutPage = lazy(() => import("./AboutPage"));

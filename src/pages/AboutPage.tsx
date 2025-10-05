@@ -1,5 +1,4 @@
-import { Link } from "react-router";
-import { Github, Youtube, Heart, Code, LucideShield, Database, Palette } from "lucide-react";
+import { Heart, Code, LucideShield, Database, Palette } from "lucide-react";
 
 export default function AboutPage() {
     return (
@@ -132,69 +131,6 @@ export default function AboutPage() {
                             </p>
                         </div>
                     </div>
-                </div>
-
-                <div className="bg-[#f5e9c9] p-8 rounded-xl border-2 border-[#b39f7d] shadow-md mb-8">
-                    <h2 className="text-2xl font-bold text-[#6b4c35] mb-4">Open Source Community</h2>
-                    <div className="space-y-4 text-[#6b4c35]/90">
-                        <p>
-                            Wisdom Bridge is an open-source project, and we welcome contributions from the community. Whether you're a developer, designer, educator, or enthusiast, there are many ways to help improve the platform:
-                        </p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>Contributing code improvements and bug fixes</li>
-                            <li>Enhancing the user interface and experience</li>
-                            <li>Curating additional educational content and courses</li>
-                            <li>Providing feedback and suggesting features</li>
-                            <li>Spreading the word about the platform</li>
-                        </ul>
-                        <div className="mt-6">
-                            <a
-                                href="https://github.com/yourusername/wisdom-bridge"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center px-4 py-2 bg-[#8ab77d] text-white rounded-lg border-2 border-[#5e8c61] hover:bg-[#5e8c61] transition-colors"
-                            >
-                                <Github className="mr-2 h-5 w-5" />
-                                View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="bg-[#f5e9c9] p-8 rounded-xl border-2 border-[#b39f7d] shadow-md mb-8">
-                    <h2 className="text-2xl font-bold text-[#6b4c35] mb-4">Attributions</h2>
-                    <div className="space-y-4 text-[#6b4c35]/90">
-                        <p>
-                            We are deeply grateful to the content creators who make high-quality educational videos available on YouTube. Their dedication to sharing knowledge makes platforms like Wisdom Bridge possible.
-                        </p>
-                        <p>
-                            Special thanks to channels like The Organic Chemistry Tutor, Khan Academy, 3Blue1Brown, and many others who have created outstanding educational content.
-                        </p>
-                        <div className="mt-4">
-                            <a
-                                href="https://www.youtube.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center px-4 py-2 bg-white text-[#6b4c35] rounded-lg border-2 border-[#b39f7d] hover:bg-[#e6d1a7]/30 transition-colors"
-                            >
-                                <Youtube className="mr-2 h-5 w-5 text-red-600" />
-                                Support Content Creators on YouTube
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="bg-[#f5e9c9] p-8 rounded-xl border-2 border-[#b39f7d] shadow-md">
-                    <h2 className="text-2xl font-bold text-[#6b4c35] mb-4">Get in Touch</h2>
-                    <p className="text-[#6b4c35]/90 mb-6">
-                        Have questions, suggestions, or just want to say hello? We'd love to hear from you!
-                    </p>
-                    <Link
-                        to="/contact"
-                        className="inline-flex items-center px-6 py-3 bg-[#8ab77d] text-white rounded-lg border-2 border-[#5e8c61] hover:bg-[#5e8c61] transition-colors font-medium"
-                    >
-                        Contact Us
-                    </Link>
                 </div>
             </div>
         </div>

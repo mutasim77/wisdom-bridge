@@ -3,6 +3,7 @@ import { HomePage, CoursesPage, SingleCoursePage, ChapterPage, ProfilePage, Abou
 import { Cloud, Leaf, Bird } from "lucide-react"
 import Navbar from "./components/layout/Navbar"
 import Footer from "./components/layout/Footer"
+import { Suspense } from "react"
 
 export default function App() {
   return (
@@ -24,14 +25,16 @@ export default function App() {
         <Navbar />
 
         <div className="flex-grow z-10">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/courses" element={<CoursesPage />} />
-            <Route path="/courses/:courseId" element={<SingleCoursePage />} />
-            <Route path="/courses/:courseId/chapters/:chapterId" element={<ChapterPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/about" element={<AboutPage />} />
-          </Routes>
+          <Suspense fallback={<div className="text-center p-10 text-[#4a7dbd]">Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/courses" element={<CoursesPage />} />
+              <Route path="/courses/:courseId" element={<SingleCoursePage />} />
+              <Route path="/courses/:courseId/chapters/:chapterId" element={<ChapterPage />} />
+              <Route path="/profile" element={<ProfilePage />} />
+              <Route path="/about" element={<AboutPage />} />
+            </Routes>
+          </Suspense>
         </div>
 
         <Footer />
